@@ -1,24 +1,21 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Open+sans:300,400,700);
-
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    background-color: white;
-    font-family: 'Open Sans', 'sans serif';
-    font-weight: 400;
-}
-
 header {
-    font-family:'Open sans', 'sans serif';
-    font-weight: 700;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     text-align: left;
     margin-top: 30px;
     margin-left: 50px;
+    margin-right: 100px;
+}
+
+body {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer {
@@ -37,23 +34,44 @@ footer a:hover{
     color: grey;
 }
 
+ul {
+    list-style-type: none;
+}
 
 .caption {
-    list-style-type: none;
     list-style-position: inside;
     margin-top: 10px;
     visibility: hidden;
 }
 
-#captionJar,
-#captionChapstick,
-#captionKeys,
-#captionUsb,
-#captionPhone {
-    margin-left: 250px;
-    margin-top: -50px;
+#captionJar {
+    background-image: url(images/4text.png);
 }
 
+#chapstick {
+    margin-top: 35px;
+    margin-left: -10px;
+}
+
+#jar {
+    margin-left: 905px;
+    margin-top: -300px;
+}
+
+#keys {
+    margin-left: 670px;
+    margin-top: -300px;
+}
+
+#usb {
+    margin-left: 445px;
+    margin-top: -140px;
+}
+
+#phone {
+    margin-left: 850px;
+    margin-top: -335px;
+}
 
 .chapstickTip,
 .jarTip,
@@ -61,12 +79,18 @@ footer a:hover{
 .usbTip,
 .phoneTip {
     position: absolute;
-    background-image: url("images/4text.png");
-    color: black;
-    font-size: 12px;
-    width: 188px;
-    height: 164px;
-    padding-top: 50px;
-    margin-left: 250px;
     overflow: hidden;
+    margin-left: 850px;
+    margin-top: -300px;
+}
+
+#captionJar,
+#captionChapstick,
+#captionKeys,
+#captionUsb {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 520px;
+    padding-top: -200px;
+}
+#captionPhone {
 }
